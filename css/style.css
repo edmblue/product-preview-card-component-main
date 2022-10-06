@@ -32,7 +32,7 @@ body {
   background-size: 100%, 18.75rem;
   background-position: center, left center;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 33rem;
 }
 
@@ -45,7 +45,7 @@ body {
         hsl(0, 0%, 100%) 100%
       ),
       url(../images/image-product-mobile.jpg);
-    background-size: 100%, 600px;
+    background-size: 100%, 37.5rem;
     background-position: center, top center;
     width: 23rem;
   }
@@ -53,7 +53,7 @@ body {
 
 @media screen and (max-width: 320px) {
   .product-info {
-    background-size: 100%, 647px;
+    background-size: 100%, 40.4375rem;
   }
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .product-info-text {
-  padding: 30px 1.2rem;
+  padding: 1.875rem 1.2rem;
   grid-column: 2 / 3;
 }
 
@@ -91,48 +91,48 @@ body {
 .product-name {
   font-family: 'Fraunces', serif;
   color: hsl(212, 21%, 14%);
-  padding: 22px 0;
+  padding: 1.375rem 0;
 }
 
 .description {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: hsl(228, 12%, 48%);
-  padding-bottom: 22px;
-  line-height: 22px;
+  padding-bottom: 1.375rem;
+  line-height: 1.375rem;
 }
 
 .prices {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
-  padding-bottom: 22px;
+  padding-bottom: 1.375rem;
 }
 
 .discount {
   font-family: 'Fraunces', serif;
   color: hsl(158, 36%, 37%);
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .total {
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .button {
   background: hsl(158, 36%, 37%);
-  padding: 14px 50px;
+  padding: 0.875rem 3.125rem;
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
-  font-size: 12px;
-  border-radius: 7px;
+  font-size: 0.75rem;
+  border-radius: 0.4375rem;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   margin: 0 auto;
   width: 100%;
 }
@@ -146,5 +146,5 @@ footer {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
+  bottom: 0.625rem;
 }
