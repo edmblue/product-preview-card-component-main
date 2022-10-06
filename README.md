@@ -4,4 +4,4 @@ I did this using background image linear-grandient instead of just adding a back
 
 First little project with mobile design!
 
-watch live: 
+watch live: https://product-preview-component-main-rb.netlify.app/
