@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product-info {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      hsl(0, 0%, 100%) 50%,
+      hsl(0, 0%, 100%) 100%
+    ),
+    url(../images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 18.75rem;
+  background-position: center, left center;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 33rem;
+}
+
+@media screen and (max-width: 520px) {
+  .product-info {
+    background-image: linear-gradient(
+        to bottom,
+        transparent 50%,
+        hsl(0, 0%, 100%) 50%,
+        hsl(0, 0%, 100%) 100%
+      ),
+      url(../images/image-product-mobile.jpg);
+    background-size: 100%, 600px;
+    background-position: center, top center;
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .product-info {
+    background-size: 100%, 647px;
+  }
+}
+
+.product-info-grid {
+  display: grid;
+  justify-content: flex-end;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 520px) {
+  .product-info-grid {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.product-info-text {
+  padding: 30px 1.2rem;
+  grid-column: 2 / 3;
+}
+
+@media screen and (max-width: 520px) {
+  .product-info-text {
+    grid-row: 2 / 3;
+  }
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+
+.product-name {
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 21%, 14%);
+  padding: 22px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  padding-bottom: 22px;
+  line-height: 22px;
+}
+
+.prices {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 22px;
+}
+
+.discount {
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+}
+
+.total {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+}
+
+.button {
+  background: hsl(158, 36%, 37%);
+  padding: 14px 50px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 7px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.button:hover {
+  background: hsl(158, 36%, 29%);
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
